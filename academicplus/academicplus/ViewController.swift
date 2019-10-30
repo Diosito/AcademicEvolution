@@ -14,7 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    @IBAction func onboardButton(_ sender: UIButton) {
+        let onBoard : UIStoryboard = UIStoryboard(name: "Main",bundle : nil)
+        let loginController = onBoard.instantiateViewController(withIdentifier: "login")
+        self.present(loginController, animated: false, completion: nil)
+    }
+    
+    
+    //Login
+    
 }
 
